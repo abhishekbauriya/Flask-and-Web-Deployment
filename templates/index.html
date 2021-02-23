@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+	<h1>
+		My Friends
+	</h1>
+
+	
+
+	{% for f in my_friends %}
+		<h2> {{f}} </h2>
+	{% endfor %}
+
+	<form method="POST" action="/submit" enctype="multipart/form-data">
+		<input type="text" name="no1" placeholder="Enter Number 1">
+		<input type="text" name="no2" placeholder="Enter Number 2">
+
+		<input type="file" name="userfile">
+
+		<input type="submit">
+
+	</form>
+
+</body>
+</html>
